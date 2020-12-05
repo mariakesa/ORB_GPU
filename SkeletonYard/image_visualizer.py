@@ -59,7 +59,7 @@ class Canvas(scene.SceneCanvas):
         self.scaler=0.000001
 
         self.view=self.central_widget.add_view()
-        self.image=scene.visuals.Image(self.image,parent=self.view.scene, cmap='bwr',clim=[0,255])
+        self.image=scene.visuals.Image(self.image,parent=self.view.scene, cmap='nipy_spectral',clim=[0,255])
         print('success')
 
     def load_image(self):
